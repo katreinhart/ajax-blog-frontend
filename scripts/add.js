@@ -9,7 +9,9 @@ const addPost = (e) => {
   }
   axios.post(`${BASE_URL}/posts`, newPost)
     .then((result) => {
-      window.location = HOMEPAGE
+      console.log(result)
+      const newPostId = result.data.id
+      window.location = `${HOMEPAGE}/?post=${newPostId}`
     })
 }
 

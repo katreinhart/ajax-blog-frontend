@@ -20,3 +20,4 @@ const deletePost = (id) => {
       document.getElementById(`cancel-delete-post-${id}`).addEventListener('click', showAllPosts)
     })
 }
+ 

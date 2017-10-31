@@ -1,5 +1,7 @@
-const BASE_URL = 'http://localhost:3000'
-const HOMEPAGE = 'http://localhost:8080'
+const BASE_URL = 'https://kat-ajax-blog-backend.herokuapp.com'
+const HOMEPAGE = window.location.includes('localhost') 
+               ? 'http://localhost:8080' 
+               : 'http://kat-ajax-blog.surge.sh'
 
 const getParamsFromString = (string) => {
   const params = {}
