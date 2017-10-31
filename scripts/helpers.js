@@ -1,5 +1,5 @@
 const BASE_URL = 'https://kat-ajax-blog-backend.herokuapp.com'
-const HOMEPAGE = window.location.includes('localhost') 
+const HOMEPAGE = window.location.href.includes('localhost') 
                ? 'http://localhost:8080' 
                : 'http://kat-ajax-blog.surge.sh'
 
